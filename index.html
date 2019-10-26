@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    
+    	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#menu").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1500);
+       });
+       $("#top").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1500);
+       });
+   });
+   </script>
+    
+
+    <title>1 laba</title>
+</head>
+<body id="top">
+        <a href="#top" class="toTheTop shadow">Наверх</a>
+    <div class="container">
+        <header class="header" id="menu">
+            <ul class="navbar">
+                <li class="navitem"><a href="#" class="nav-link">Магазин</a></li>
+                <li class="navitem"><a href="#catalog" onclick="smoothScroll('catalog')" class="nav-link">Ассортимент</a></li>
+                <li class="navitem"><a href="#description" onclick="smoothScroll('description')" class="nav-link">Описание </a></li>
+                <li class="navitem"><a href="#form" onclick="smoothScroll('form')" class="nav-link">Вопрос</a></li>
+                <li class="navitem"><a href="catalog.html" class="nav-link">Каталог</a></li>
+                <li class="navitem"><a href="forma.html" class="nav-link">Контакты</a></li>
+                <li class="navitem"><a href="map.html" class="nav-link">Карта</a></li>
+            </ul>
+        </header>
+
+        <div class="desck-container">
+            <div class="hero">
+                <h1 class="hero__title">Магазин</h1>
+                <p class="hero__slogan">Верни мне мой 2007</p>
+        
+            </div>
+        
+        <h1 class="title" style="text-align: center;">Back in 2oo7</h1>
+        <h1 class="description" style="text-align: center;">
+        Добро пожаловать в Наш Магазин! </h1>
+        <ol class="spisok" style="margin-left: 20%;   font-weight:100;
+        font-size: 1.4em;">
+       <li>Ищите что-то особенное? </li>
+       <li> У вас день рождения?</li>
+       <li>Хотите понравиться девушке?</li>
+       <li>Хотите продвинуться по служебной лестнице на работе, но не знаете как? </li>
+       <li> Хотите приятно удивить родителей? </li>
+    </ol>
+       <h1 class="title" style="text-align: center;"> Тогда мерч прямиком из 2007 года именно то что вам надо!
+           <br> Все размеры, доступная цена для настоящих ценителей Великого времени!</h1>
+
+    
+        </h2>
+        <h1 class="title " id="catalog">Ассортимент</h1>
+        </div>
+        <div class="tov-con">
+        
+        <div class="tovar-blocks top">
+
+            <div class="tovar-block">
+                <img class="tovar"  src="https://storage.vsemayki.ru/images/0/1/1806/1806479/previews/people_1_manshortfull_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить Оригами</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto.</p>
+                <a href="#" class="red-btn">228 руб</a>
+            </div>    
+            <div class="tovar-block">
+                <img class="tovar"  src="https://storage.vsemayki.ru/images/0/0/110/110105/previews/people_1_manshort_front_black_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить Stigmata</h1>
+                <p class="desc-tov">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur debitis sed similique incidunt, rerum qui et error tempora sint ut excepturi quisquam voluptas cupiditate animi commodi atque, id repudiandae nisi.</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>  
+            <div class="tovar-block">
+                <img class="tovar" src="https://lh6.googleusercontent.com/BuHcCc3hLCreZ5B_bOCXs3g1J_w3pv5NSzu3159gPbzQ4sqmt4hilmSc6TFT0zfxXP3YW2h5yesnuXr2AC7jq-luo26kZjqbFbSf69_9OBdhBLbpAHKw8M_nosCMGavI=s412" alt="putin">
+                <h1 class="title-tov">Купить Jane Air</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto.</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>   
+            <div class="tovar-block">
+                <img class="tovar" src="https://storage.vsemayki.ru/images/0/0/104/104912/previews/people_1_womanshort_front_black_500.jpg" alt="putin">
+                <h1 class="title-tov">Tokio Hotel</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quam, iste eos at ullam et itaque cupiditate ipsa dicta rem architecto, quis exercitationem earum accusamus perspiciatis quod, mollitia laboriosam voluptate!</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>   
+          
+
+        </div>
+        <div class="tovar-blocks mid">
+
+            <div class="tovar-block">
+                <img class="tovar"  src="https://storage.vsemayki.ru/images/0/1/1821/1821509/previews/people_1_manshortfull_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить Tokio Hotel</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto.</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>    
+            <div class="tovar-block">
+                <img class="tovar"  src="https://storage.vsemayki.ru/images/0/1/1756/1756671/previews/people_1_manshortfull_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить Король и Шут</h1>
+                <p class="desc-tov">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur debitis sed similique incidunt, rerum qui et error tempora sint ut excepturi quisquam voluptas cupiditate animi commodi atque.</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>  
+            <div class="tovar-block">
+                <img class="tovar" src="https://storage.vsemayki.ru/images/0/0/143/143770/previews/people_1_womanshort_front_melange_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить NARUTO</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto.</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>   
+            <div class="tovar-block">
+                <img class="tovar" src="https://storage.vsemayki.ru/images/0/0/111/111297/previews/people_1_manshort_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить [AMATORY]</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quam, iste eos at ullam et itaque cupiditate ipsa dicta rem architecto, quis exercitationem earum accusamus perspiciatis quod, mollitia laboriosam voluptate!</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>   
+          
+
+        </div>
+        <div class="tovar-blocks bot">
+
+            <div class="tovar-block">
+                <img class="tovar"  src="https://storage.vsemayki.ru/images/0/1/1661/1661051/previews/people_5_backpack_full_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить Эмо-рюкзак</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto.</p>
+                <a href="#" class="red-btn">1999 руб</a>
+            </div>    
+            <div class="tovar-block">
+                <img class="tovar"  src="https://storage.vsemayki.ru/images/0/1/1271/1271281/previews/people_1_sign_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить значок</h1>
+                <p class="desc-tov">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur debitis sed similique incidunt, rerum qui et error tempora sint ut excepturi quisquam voluptas cupiditate animi commodi atque, id repudiandae nisi.</p>
+                <a href="#" class="red-btn">99 руб</a>
+            </div>  
+            <div class="tovar-block">
+                <img class="tovar" src="https://storage.vsemayki.ru/images/0/1/1534/1534137/previews/people_5_child_tshirt_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить LUMEN</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto.</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>   
+            <div class="tovar-block">
+                <img class="tovar" src="https://storage.vsemayki.ru/images/0/1/1308/1308118/previews/people_6_womanshortfull_front_white_500.jpg" alt="putin">
+                <h1 class="title-tov">Купить Rasmus</h1>
+                <p class="desc-tov">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quam, iste eos at ullam et itaque cupiditate ipsa dicta rem architecto, quis exercitationem earum accusamus perspiciatis quod, mollitia laboriosam voluptate!</p>
+                <a href="#" class="red-btn">999 руб</a>
+            </div>   
+          
+
+        </div>
+    </div>
+<div class="disc-conteiner" id="description">
+        <h1 class="title">Подробное описание товаров</h1>
+
+
+        <p class="description" >
+        
+<br>
+           <strong>Карманный календарь  с Путиным</strong> 
+           <br>
+Возможна печать различных видов и размеров карманных календарей, ламинация как матовой, так и глянцевой пленкой. Наиболее популярные форматы: 55х85 (формат дисконтной карты) и 70х100 мм (самый традиционный формат карманного календаря). Характеристики карманных календарей:  мелованная бумага, 300 г/кв.м. цветность 4+4, CMYK, ламинация 38 микрон, скругленные углы.
+<br>
+<strong>Настольный календарь  с Путиным</strong>
+<br>
+
+Настольный календарь представляет собой лист формата А4, запечатанного с одной стороны . Календарь имеет 3 бига для облегчения его сборки. Собирается такой календарь на замочек или обыкновенную скрепку. В собранном виде формат каждой из двух его сторон составляет 210 х 120 мм. Печать календарей производится на мелованной бумаге плотностью 280-295 г/кв.м.
+<br>
+<strong>Настенный перекидной календарь  с Путиным</strong>
+<br>
+
+Настенный перекидной календарь — один из самых солидных видов календарей. Настенный календарь можно изготовить в любом формате, наиболее популярные из них — А2 и А3. Блок календаря состоит из 6 или 12 листов мелованной бумаги плотностью 150 г/кв.см, обложка 250 г/кв.см. Крепится при помощи ригеля и навивки на металлическую пружину.
+<br>
+<strong>Квартальный календарь  с Путиным</strong>
+
+<br>
+Самый популярный вид исполнения календарей. Состоит из 4-х частей: шапки с главным рекламным полем формата А4 и трех блоков с календарной сеткой и небольшим рекламным полем  50-60 мм. Календарная сетка печатается на офсетной бумаге с цветностью 2+0, шапка календаря печатается на мелованной бумаге плотностью 300 г/кв.см. с печатью 4+0. Дополнительно можно заламинировать шапку календаря глянцевой или матовой ламинацией.
+        </p>
+
+
+    </div>
+
+
+    <div class="form-container" >
+        <h1 class="title-form" id="form">Связаться с нами</h1>
+        <p class="text-form">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <br> Lorem ipsum dolor sit amet consectetur
+        </p>
+        <div class="inputs-top">
+            <input type="text" class="top-i" placeholder="Your Name">
+            <input type="text" class="top-i" placeholder="Your Email">
+        </div>
+        <div class="input-bot">
+            <input type="text" class="title-inp" placeholder="Your Password">
+            
+            <textarea type="text" class="comment-inp" placeholder="Your Comment"></textarea>
+            <a href="#" class="red-btn">Перейти</a>
+        </div>
+    </div>
+
+            
+    <footer class="footer">
+
+            <div class="menu-left">
+                <p class="menu__title">Tula State</p>
+    
+                <a href="#" class="menu__link">© Все права защищены</a>
+                
+
+            </div>
+            
+            <div class="menu">
+                
+    
+                <a href="#" class="menu__link">vadaimpwnz228@hmail.com</a>
+                <a href="#" class="menu__link">88005553535</a>
+
+            </div>
+            <div class="menu">
+           
+    
+                <a href="#" class="menu__link">Projects</a>
+                <a href="#" class="menu__link">About</a>
+                <a href="#" class="menu__link">Service</a>
+                <a href="#" class="menu__link">Carier</a>
+
+            </div>
+            <div class="menu" style="margin-left: -100px;">
+                   
+        
+                    <a href="#" class="menu__link">News</a>
+                    <a href="#" class="menu__link">Events</a>
+                    <a href="#" class="menu__link">Legals</a>
+                    <a href="#" class="menu__link">Contact</a>
+
+                </div>
+            <div class="menu">
+                   
+        
+                <a href="#" class="menu__link">Facebook</a>
+                <a href="#" class="menu__link">Twitter</a>
+                <a href="#" class="menu__link">Instagram</a>
+                <a href="#" class="menu__link">Dribbble</a>
+    
+            </div>
+
+            </footer>
+        
+        
+
+
+
+
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

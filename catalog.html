@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#menu").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1500);
+       });
+       $("#top").on("click","a", function (event) {
+           event.preventDefault();
+           var id  = $(this).attr('href'),
+               top = $(id).offset().top;
+           $('body,html').animate({scrollTop: top}, 1500);
+       });
+   });
+   </script>
+    <title>Каталог</title>
+</head>
+<body id="top">
+        <a href="#top" class="toTheTop shadow">Наверх</a>
+    <div class="container ">
+        <header class="header" id="menu">
+            <ul class="navbar">
+                <li class="navitem"><a href="index.html" class="nav-link">Магазин</a></li>
+                <li class="navitem"><a href="#catalog" onclick="smoothScroll('catalog')" class="nav-link">Ассортимент</a></li>
+                <li class="navitem"><a href="#description" onclick="smoothScroll('description')" class="nav-link">Описание </a></li>
+                <li class="navitem"><a href="#form" onclick="smoothScroll('form')" class="nav-link">Вопрос</a></li>
+                <li class="navitem"><a href="#" class="nav-link">Каталог</a></li>
+                <li class="navitem"><a href="forma.html" class="nav-link">Контакты</a></li>
+                <li class="navitem"><a href="map.html" class="nav-link">Карта</a></li>
+            </ul>
+        </header>
+
+
+    
+        <div class="content typography">
+
+                <h1 class="title">Верни мне мой 2007</h1>
+        
+                <div class="tovar-catalog">
+                        <p>
+                    <img class="img-left" src="https://storage.vsemayki.ru/images/0/1/1806/1806479/previews/people_1_manshortfull_front_white_500.jpg" alt="">
+               
+                    <br>
+                    <strong>Оригами</strong>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto
+                    <br>    <a href="#" class="red-btn-catalog">228 руб</a>
+                </p>
+                
+                </div>
+                <div class="tovar-catalog">
+                        <p>   <img  class="img-left" src="https://storage.vsemayki.ru/images/0/0/110/110105/previews/people_1_manshort_front_black_500.jpg" alt="">
+                 
+                        <br> <strong>Stigmata</strong>
+        <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto
+        <br>       <a href="#" class="red-btn-catalog">999 руб</a>  </p>
+                   
+                </div>
+                <div class="tovar-catalog">
+                        <p>  <img class="img-left" src="https://lh6.googleusercontent.com/BuHcCc3hLCreZ5B_bOCXs3g1J_w3pv5NSzu3159gPbzQ4sqmt4hilmSc6TFT0zfxXP3YW2h5yesnuXr2AC7jq-luo26kZjqbFbSf69_9OBdhBLbpAHKw8M_nosCMGavI=s412" alt="">
+                   
+                        <br> <strong>Jane Air</strong>
+        
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto
+                    
+                   <br>     <a href="#" class="red-btn-catalog">999 руб</a>    </p>
+                  
+                </div>
+                <div class="tovar-catalog">
+                        <p>  <img  class="img-left" src="https://storage.vsemayki.ru/images/0/0/104/104912/previews/people_1_womanshort_front_black_500.jpg" alt="">
+                   
+                        <br> <strong>Tokio Hotel</strong>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto
+                        <br> <a href="#" class="red-btn-catalog">1999 руб</a>    </p>
+                    
+                </div>
+                <div class="tovar-catalog">
+                        <p>  <img  class="img-left" src="https://storage.vsemayki.ru/images/0/1/1821/1821509/previews/people_1_manshortfull_front_white_500.jpg" alt="">
+                  
+                        <br> <strong>Tokio Hotel</strong>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto
+                        <br><a href="#" class="red-btn-catalog">999 руб</a>    </p>
+                    
+                </div>
+                <div class="tovar-catalog">
+                        <p>  <img  class="img-left" src="https://storage.vsemayki.ru/images/0/1/1756/1756671/previews/people_1_manshortfull_front_white_500.jpg" alt="">
+                  
+                        <br> <strong>Король и Шут</strong>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tempora reprehenderit ex, nihil rem similique aperiam excepturi omnis ullam consequatur sunt nam mollitia in, voluptatum quod ea, deleniti rerum architecto
+                    
+                        <br> <a href="#" class="red-btn-catalog">999 руб</a>    </p>
+                    
+                </div>
+                <div class="tovar-catalog">
+                        <p>  <img  class="img-left" src="https://storage.vsemayki.ru/images/0/0/143/143770/previews/people_1_womanshort_front_melange_500.jpg" alt="">
+                   
+                        <br> <strong>Naruto</strong>
+                       
+                        <br>
+                        
+                        Самый популярный вид исполнения календарей. Состоит из 4-х частей: шапки с главным рекламным полем формата А4 и трех блоков с календарной сеткой и небольшим рекламным полем  50-60 мм. Календарная сетка печатается на офсетной бумаге с цветностью 2+0, шапка календаря печатается на мелованной бумаге плотностью 300 г/кв.см. с печатью 4+0. Дополнительно можно заламинировать шапку календаря глянцевой или матовой ламинацией.
+                    <br>  <a href="#" class="red-btn-catalog">КУПИТЬ</a>    </p>
+                    
+                </div>
+
+         
+                
+            
+        
+            </div>
+            <footer class="footer">
+
+                    <div class="menu-left">
+                        <p class="menu__title">Tula State</p>
+            
+                        <a href="#" class="menu__link">© Все права защищены</a>
+                        
+        
+                    </div>
+                    
+                    <div class="menu">
+                        
+            
+                        <a href="#" class="menu__link">vadaimpwnz228@hmail.com</a>
+                        <a href="#" class="menu__link">88005553535</a>
+        
+                    </div>
+                    <div class="menu">
+                   
+            
+                        <a href="#" class="menu__link">Projects</a>
+                        <a href="#" class="menu__link">About</a>
+                        <a href="#" class="menu__link">Service</a>
+                        <a href="#" class="menu__link">Carier</a>
+        
+                    </div>
+                    <div class="menu" style="margin-left: -100px;">
+                           
+                
+                            <a href="#" class="menu__link">News</a>
+                            <a href="#" class="menu__link">Events</a>
+                            <a href="#" class="menu__link">Legals</a>
+                            <a href="#" class="menu__link">Contact</a>
+        
+                        </div>
+                    <div class="menu">
+                           
+                
+                        <a href="#" class="menu__link">Facebook</a>
+                        <a href="#" class="menu__link">Twitter</a>
+                        <a href="#" class="menu__link">Instagram</a>
+                        <a href="#" class="menu__link">Dribbble</a>
+            
+                    </div>
+        
+                    </footer>
+
+            </div>
+</body>
+</html>
